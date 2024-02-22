@@ -1,5 +1,10 @@
 # ReactJS + NodeJS + MongoDB Atlas Chat-App
 
+# Install dependencies:
+### Inside root folder run:
+
+`npm install`
+
 > Start backend: inside root folder run:
 
 `npm run server`
