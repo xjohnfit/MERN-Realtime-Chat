@@ -9,7 +9,12 @@ const SignUp = () => {
         </h1>
 
         <form>
-          
+          <div>
+            <label htmlFor="" className='label p-2'>
+              <span className='text-base label-text'>Full Name</span>
+            </label>
+            <input type="text" name="" id="" placeholder='John Doe' className=''/>
+          </div>
         </form>
       </div>
     </div>

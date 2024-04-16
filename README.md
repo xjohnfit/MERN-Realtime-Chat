@@ -1,6 +1,6 @@
 # ReactJS + NodeJS + MongoDB Atlas Chat-App
 
-# Install dependencies:
+## Install dependencies:
 ### Inside root folder run:
 
 `npm install`
@@ -21,3 +21,4 @@
 * jsonwebtoken
 * mongoose
 * socket.io
+* daisyUI
