@@ -20,5 +20,6 @@
 * express
 * jsonwebtoken
 * mongoose
+* react-hot-toast
 * socket.io
 * daisyUI
