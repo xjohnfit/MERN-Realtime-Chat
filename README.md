@@ -23,3 +23,4 @@
 * react-hot-toast
 * socket.io
 * daisyUI
+* zustand
