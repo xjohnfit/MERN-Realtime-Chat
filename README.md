@@ -1,33 +1,121 @@
-# MERN Chat-App
+# MERN Realtime Chat Application
 
--   Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
--   Authentication and Authorization with JWT
--   Real-time messaging with Socket.io
--   Online user status (Socket.io and React Context)
--   Global state management with Zustand
--   Error handling both on the server and on the client
+This is a realtime chat application built using the MERN stack (MongoDB, Express, React, Node.js) with Socket.IO for realtime communication.
 
-## Install dependencies:
-### Inside root folder run:
+## Features
 
-`npm install`
+- User authentication (signup, login, logout)
+- Realtime messaging with Socket.IO
+- Protected routes with JWT authentication
+- User profile with avatars
+- Responsive design with Tailwind CSS and DaisyUI
 
-> Start backend: inside root folder run:
+## Project Structure
 
-`npm run server`
+```sh
+.env
+.gitignore
+backend/
+ controllers/
+  auth.controller.js
+  message.controller.js
+  user.controller.js
+ db/
+  connectToMongoDB.js
+ middleware/
+  protectRoute.js
+ models/
+  conversation.model.js
+  message.model.js
+  user.model.js
+ routes/
+  auth.routes.js
+  message.routes.js
+  user.routes.js
+ server.js
+ socket/
+  socket.js
+ utils/
+  generateToken.js
+frontend/
+ .eslintrc.cjs
+ index.html
+ package.json
+ postcss.config.js
+ public/
+  ...
+ README.md
+ src/
+  components/
+  context/
+  hooks/
+  pages/
+  utils/
+  zustand/
+ tailwind.config.js
+ vite.config.js
+package.json
+README.md
+```
 
-> Start frontend: inside frontend folder run:
+## Installation
 
-`npm run dev`
+1. Clone the repository:
 
-## Dependencies
-* bcryptjs
-* cookie-parser
-* dotenv
-* express
-* jsonwebtoken
-* mongoose
-* react-hot-toast
-* socket.io
-* daisyUI
-* zustand
+```sh
+git clone https://github.com/your-username/MERN-Realtime-Chat.git
+cd MERN-Realtime-Chat
+```
+
+2. Install backend dependencies:
+
+```sh
+npm install
+```
+
+3. Install frontend dependencies:
+
+```sh
+cd frontend
+npm install
+```
+
+4. Create a .env file in the root directory and add the following environment variables:
+
+```
+MONGO_DB_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+NODE_ENV=development
+PORT=5000
+```
+
+## Running the Application
+
+1. Start the backend server:
+
+```sh
+npm run server
+```
+
+2. Start the frontend development server:
+
+```sh
+cd frontend
+npm run dev
+```
+
+3. Open your browser and navigate to `http://localhost:3000`.
+
+## Building for Production
+
+To build the application for production, run the following command:
+
+```sh
+npm run build
+```
+
+This will create a `dist` folder in the frontend directory with the production build of the application.
+
+## License
+
+This project is licensed under the MIT License.
